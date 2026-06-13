@@ -4,7 +4,6 @@
 
 @section('content')
 <div class="max-w-2xl mx-auto space-y-6">
-    <!-- Header -->
     <div class="bg-white rounded-2xl p-6 shadow-lg border border-gray-100">
         <div class="flex items-center mb-4">
             <div class="flex items-center justify-center w-12 h-12 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-xl mr-4">
@@ -17,7 +16,6 @@
         </div>
     </div>
 
-    <!-- Profile Info Card -->
     <div class="bg-white rounded-2xl p-6 shadow-lg border border-gray-100">
         <h3 class="text-lg font-bold text-gray-800 mb-4 flex items-center">
             <i class="fas fa-id-card text-blue-600 mr-2"></i>
@@ -47,7 +45,6 @@
         </div>
     </div>
 
-    <!-- Edit Form Card -->
     <div class="bg-white rounded-2xl p-6 shadow-lg border border-gray-100">
         <h3 class="text-lg font-bold text-gray-800 mb-6 flex items-center">
             <i class="fas fa-edit text-green-600 mr-2"></i>
@@ -68,7 +65,7 @@
             </div>
         @endif
 
-        <form action="{{ route('settings.update') }}" method="POST" class="space-y-6">
+        <form action="{{ route('setting.update', $user->id) }}" method="POST">
             @csrf
             @method('PUT')
 
@@ -102,7 +99,6 @@
         </form>
     </div>
 
-    <!-- Security Notice -->
     <div class="bg-gradient-to-r from-yellow-50 to-orange-50 rounded-2xl p-6 border border-yellow-200">
         <div class="flex items-start">
             <div class="flex items-center justify-center w-10 h-10 bg-yellow-100 rounded-lg mr-4">

@@ -4,9 +4,8 @@
 
 @section('content')
 <div class="space-y-6">
-    <!-- Welcome Header dengan warna gelap solid slate -->
+
     <div class="bg-gradient-to-br from-slate-800 via-slate-800 to-slate-900 rounded-3xl p-8 lg:p-12 text-white shadow-2xl overflow-hidden relative border border-slate-700">
-        <!-- Background Pattern -->
         <div class="absolute inset-0 opacity-5">
             <svg class="w-full h-full" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="100" cy="100" r="150" fill="white"/>

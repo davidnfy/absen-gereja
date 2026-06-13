@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.guest')
 
 @section('title', 'Lupa Password')
 
@@ -7,10 +7,10 @@
     <!-- Logo/Brand Section -->
     <div class="text-center mb-6">
         <div class="inline-flex items-center justify-center w-16 h-16 bg-black bg-opacity-20 backdrop-blur-sm rounded-full mb-3">
-            <i class="fas fa-key text-white text-2xl"></i>
+            <i class="fas fa-key text-black text-2xl"></i>
         </div>
-        <h1 class="text-3xl font-bold text-white mb-1">Lupa Password</h1>
-        <p class="text-white text-opacity-90 text-sm">Kami akan membantu Anda mengatur ulang password</p>
+        <h1 class="text-3xl font-bold text-black mb-1">Lupa Password</h1>
+        <p class="text-black text-opacity-90 text-sm">Kami akan membantu Anda mengatur ulang password</p>
     </div>
 
     <!-- Forgot Password Card -->
